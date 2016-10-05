@@ -33,5 +33,5 @@ int main() {
 		printf("⛭ %.0f%% | %s", brightness * 100 / (float) max_brightness, input);
 		std::cout.flush();
 	}
-	return 0;
+	return EXIT_SUCCESS;
 }
