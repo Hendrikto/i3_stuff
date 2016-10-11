@@ -166,4 +166,5 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightnes
 bindsym $mod+m move workspace to output left
 
 # Floating mode
+for_window [class="Shutter" instance="shutter"] floating enable
 for_window [class="Tk" instance="tk"] floating enable
