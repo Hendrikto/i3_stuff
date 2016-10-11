@@ -30,7 +30,7 @@ int main() {
 		actual_brightness >> brightness;
 		actual_brightness.seekg(0);
 		getline(&input, &size, stdin);
-		printf("⛭ %.0f%% | %s", brightness * 100 / (float) max_brightness, input);
+		printf("💡 %.0f%% | %s", brightness * 100 / (float) max_brightness, input);
 		std::cout.flush();
 	}
 	return EXIT_SUCCESS;
