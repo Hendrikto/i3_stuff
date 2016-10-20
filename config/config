@@ -156,6 +156,12 @@ exec --no-startup-id compton -b --backend glx --vsync opengl
 # Network Manager Applet
 exec --no-startup-id nm-applet
 
+# Quickstart
+bindsym $mod+F1 exec google-chrome
+bindsym $mod+F2 exec expl.sh
+bindsym $mod+F11 exec shutter
+bindsym $mod+F12 exec pavucontrol
+
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 2 +2% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 2 -2% #decrease sound volume
