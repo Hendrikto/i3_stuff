@@ -14,6 +14,7 @@ int get_max_brightness() {
 	int max_brightness_value;
 	FILE* max_brightness = fopen("/sys/class/backlight/intel_backlight/max_brightness", "r");
 	fscanf(max_brightness, "%d", &max_brightness_value);
+	fclose(max_brightness);
 	return max_brightness_value;
 }
 
@@ -30,5 +31,6 @@ int main() {
 		printf("💡 %.0f%% | %s", brightness * 100 / (float) max_brightness, input);
 		fflush(stdout);
 	}
+	fclose(actual_brightness);
 	return EXIT_SUCCESS;
 }
