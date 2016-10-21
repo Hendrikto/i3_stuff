@@ -29,9 +29,9 @@ int main() {
 	size_t size = 0;
 	FILE* actual_brightness = fopen(ACTUAL_BRIGHTNESS, "r");
 	while (true) {
+		getline(&input, &size, stdin);
 		fscanf(actual_brightness, "%d", &brightness);
 		rewind(actual_brightness);
-		getline(&input, &size, stdin);
 		printf("💡 %.0f%% | %s", brightness * 100 / (float) max_brightness, input);
 		fflush(stdout);
 	}
