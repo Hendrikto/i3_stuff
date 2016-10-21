@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 
 #define BACKLIGHT_DIR "/sys/class/backlight/intel_backlight/"
 #define MAX_BRIGHTNESS BACKLIGHT_DIR "max_brightness"
@@ -29,7 +28,7 @@ int main() {
 	size_t size = 0;
 	FILE* actual_brightness = fopen(ACTUAL_BRIGHTNESS, "r");
 	setbuf(actual_brightness, NULL);
-	while (true) {
+	for (;;) {
 		getline(&input, &size, stdin);
 		fscanf(actual_brightness, "%d", &brightness);
 		rewind(actual_brightness);
