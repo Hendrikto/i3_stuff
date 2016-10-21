@@ -5,3 +5,6 @@ i3status_extensions: i3status_extensions/i3status_extensions.c
 
 clean:
 	rm i3status_extensions/i3status_extensions
+
+deploy:
+	sudo cp i3status_extensions/i3status_extensions /usr/local/bin/
