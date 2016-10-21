@@ -33,7 +33,7 @@ int main() {
 		getline(&input, &size, stdin);
 		fscanf(actual_brightness, "%d", &brightness);
 		rewind(actual_brightness);
-		printf("💡 %.0f%% | %s", brightness * 100 / (float) max_brightness, input);
+		printf("💡 %d%% | %s", brightness * 100 / max_brightness, input);
 		fflush(stdout);
 	}
 	fclose(actual_brightness);
