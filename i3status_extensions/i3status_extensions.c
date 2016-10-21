@@ -28,6 +28,7 @@ int main() {
 	char* input = malloc(1);
 	size_t size = 0;
 	FILE* actual_brightness = fopen(ACTUAL_BRIGHTNESS, "r");
+	setbuf(actual_brightness, NULL);
 	while (true) {
 		getline(&input, &size, stdin);
 		fscanf(actual_brightness, "%d", &brightness);
