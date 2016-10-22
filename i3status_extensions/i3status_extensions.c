@@ -22,7 +22,7 @@ int get_max_brightness() {
 int main() {
 	const int max_brightness = get_max_brightness();
 	int brightness = 0;
-	char* input = malloc(1);
+	char* input = NULL;
 	size_t size = 0;
 	FILE* actual_brightness = fopen(BACKLIGHT_DIR "actual_brightness", "r");
 	setbuf(actual_brightness, NULL);
