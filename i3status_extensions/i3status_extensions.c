@@ -34,5 +34,6 @@ int main() {
 		fflush(stdout);
 	}
 	fclose(actual_brightness);
+	free(input);
 	return EXIT_SUCCESS;
 }
