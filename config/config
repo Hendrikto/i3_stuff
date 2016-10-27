@@ -180,3 +180,6 @@ bindsym $mod+m move workspace to output left
 for_window [class="Shutter" instance="shutter"] floating enable
 for_window [class="Tk" instance="tk"] floating enable
 for_window [class="google-chrome" instance="google-chrome" window_role="pop-up"] floating enable
+
+# Disable window borders
+new_window normal 0
