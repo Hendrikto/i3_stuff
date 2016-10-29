@@ -21,3 +21,4 @@ Usage:
 ```sh
 i3status | i3status_extensions
 ```
+Not compatible with JSON output format. Use `output_format = "none"` in your `i3status.conf`.
