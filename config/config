@@ -160,7 +160,7 @@ bar {
         statusline $color_primary_light
         separator $color_primary_light
 
-        focused_workspace $color_primary_dark $color_primary $color_primary_light
+        focused_workspace $color_primary_dark $color_primary $color_primary_lighter
         urgent_workspace $color_primary_dark $color_accent $color_dark
     }
 }
