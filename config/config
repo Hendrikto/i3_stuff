@@ -7,6 +7,7 @@ set $mod Mod4
 # Colors
 set $color_primary #009688
 set $color_primary_light #B2DFDB
+set $color_primary_lighter #F7FBFB
 set $color_primary_dark #00796B
 set $color_dark #212121
 set $color_accent #CDDC39
@@ -200,7 +201,7 @@ for_window [class="google-chrome" instance="google-chrome" window_role="pop-up"]
 new_window normal 0
 
 # Colorscheme
-client.focused          $color_primary $color_primary $color_primary_light
+client.focused          $color_primary $color_primary $color_primary_lighter
 client.focused_inactive $color_primary_dark $color_primary_dark $color_primary_light
 client.unfocused        $color_dark $color_dark $color_primary_light
 client.urgent           $color_accent $color_accent $color_dark
