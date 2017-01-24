@@ -189,8 +189,10 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $aux_out
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle & pactl set-sink-mute 2 toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
+# increase screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5 & killall -USR1 i3status
+# decrease screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5 & killall -USR1 i3status
 
 # Move workspace to another monitor
 bindsym $mod+m move workspace to output left
