@@ -182,6 +182,9 @@ bindsym $mod+F10 exec gnome-system-monitor
 bindsym $mod+F11 exec shutter
 bindsym $mod+F12 exec pavucontrol
 
+# i3lock
+bindsym $mod+Escape exec i3lock --color=$color_dark
+
 # Pulse Audio controls
 set $aux_out alsa_output.pci-0000_00_1b.0.analog-stereo
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $aux_out +2% # increase sound volume
