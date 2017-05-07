@@ -166,6 +166,9 @@ bar {
 }
 
 # ========== CUSTOM ==========
+# Set background color
+exec --no-startup-id hsetroot -solid "$color_dark"
+
 # Compton Compositor
 exec --no-startup-id compton -b --backend glx --vsync opengl
 
