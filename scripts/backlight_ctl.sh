@@ -9,5 +9,5 @@ elif [ $1 = "dec" ]; then
 	new_brightness=$(bc -l <<< "$(cat $backlight_dir"brightness") - $brightness_step")
 fi
 
-echo $new_brightness > /sys/class/backlight/intel_backlight/brightness
+echo $new_brightness | sudo tee $backlight_dir"brightness"
 killall -USR1 i3status
