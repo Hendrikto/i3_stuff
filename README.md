@@ -22,3 +22,31 @@ Usage:
 i3status | i3status_extensions
 ```
 Not compatible with JSON output format. Use `output_format = "none"` in your `i3status.conf`.
+
+## backlight_control
+Control the backlight brightness.
+
+I had some problems with `xbacklight`, so I wrote a replacement.
+
+Build:
+```sh
+make backlight_control
+```
+
+Deploy:
+```sh
+make deploy
+```
+
+Usage:
+```sh
+$ backlight_control
+Usage: backlight_control <mode> <value>
+	mode: change | set
+
+Examples:
+	backlight_control change +10
+	backlight_control change -10
+	backlight_control set 50
+
+```
