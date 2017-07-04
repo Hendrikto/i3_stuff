@@ -8,4 +8,4 @@ clean:
 	sudo rm -f /usr/local/bin/i3status_extensions
 
 deploy:
-	sudo cp i3status_extensions /usr/local/bin/
+	sudo mv i3status_extensions /usr/local/bin/
