@@ -176,7 +176,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id pasystray &
 
 # Quickstart
-bindsym $mod+F1 exec google-chrome
+bindsym $mod+F1 exec google-chrome-stable
 bindsym $mod+F2 exec expl.sh
 bindsym $mod+F10 exec gnome-system-monitor
 bindsym $mod+F11 exec shutter
