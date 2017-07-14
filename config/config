@@ -218,4 +218,4 @@ client.placeholder      $color_primary_dark $color_primary_dark $color_primary_l
 client.background       $color_dark
 
 # Set background color
-exec --no-startup-id hsetroot -solid "$color_dark"
+exec --no-startup-id feh --bg-scale ~/.wp.jpg
