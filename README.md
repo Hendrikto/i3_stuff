@@ -26,7 +26,7 @@ Not compatible with JSON output format. Use `output_format = "none"` in your `i3
 ## backlight_control
 Control the backlight brightness.
 
-I had some problems with `xbacklight`, so I wrote a replacement.
+I had some problems with `xbacklight` in combination with the proprietary nvidia driver, so I wrote a replacement.
 
 Build:
 ```sh
