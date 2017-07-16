@@ -4,7 +4,7 @@ max_brightness = $(shell cat $(backlight_dir)max_brightness)
 all: i3status_extensions
 
 i3status_extensions: i3status_extensions.c
-	gcc -Wall -Wextra -O3 -march=native i3status_extensions.c -o i3status_extensions\
+	gcc -Wall -Wextra -O3 -march=native $@.c -o $@\
 		-D BACKLIGHT_DIR=\"$(backlight_dir)\"\
 		-D MAX_BRIGHTNESS=$(max_brightness)
 
