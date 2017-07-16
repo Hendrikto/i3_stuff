@@ -1,7 +1,7 @@
 backlight_dir = "/sys/class/backlight/intel_backlight/"
 max_brightness = $(shell cat $(backlight_dir)max_brightness)
 
-all: i3status_extensions
+all: i3status_extensions deploy
 
 i3status_extensions: i3status_extensions.c
 	gcc -Wall -Wextra -O3 -march=native $@.c -o $@\
