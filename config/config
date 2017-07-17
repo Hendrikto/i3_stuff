@@ -172,9 +172,6 @@ exec --no-startup-id compton -b --backend glx --vsync opengl --no-fading-openclo
 # Network Manager Applet
 exec --no-startup-id nm-applet
 
-# PA System Tray
-exec --no-startup-id pasystray &
-
 # Quickstart
 bindsym $mod+F1 exec google-chrome-stable
 bindsym $mod+F2 exec expl.sh
