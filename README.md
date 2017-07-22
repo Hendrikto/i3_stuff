@@ -46,3 +46,9 @@ Examples:
         backlight_control 50
 
 ```
+
+`backlight_control +n` increases brightness by n%
+
+`backlight_control -n` decreases brightness by n%
+
+`backlight_control n` sets the brightness to n%
