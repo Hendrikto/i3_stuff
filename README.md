@@ -1,9 +1,6 @@
 # i3_stuff
 A repo with some i3 stuff.
 
-## config
-Configuration files for i3 and i3status.
-
 ## i3status_extensions
 Prepend i3status with additional information.
 
@@ -41,12 +38,11 @@ make deploy
 Usage:
 ```sh
 $ backlight_control
-Usage: backlight_control <mode> <value>
-	mode: change | set
+Usage: backlight_control [+|-]<value>
 
 Examples:
-	backlight_control change +10
-	backlight_control change -10
-	backlight_control set 50
+        backlight_control +10
+        backlight_control -10
+        backlight_control 50
 
 ```
