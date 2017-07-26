@@ -62,3 +62,20 @@ Uninstall:
 ```sh
 make uninstall
 ```
+
+## battery_warning
+Install:
+```sh
+make install
+```
+
+Uninstall:
+```sh
+make uninstall
+```
+
+Usage:
+```sh
+systemctl start battery_warning.service
+systemctl enable battery_warning.service # optional
+```
