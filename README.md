@@ -9,9 +9,9 @@ Build:
 make i3status_extensions
 ```
 
-Deploy:
+Install:
 ```sh
-make deploy
+make install
 ```
 
 Usage:
@@ -19,6 +19,11 @@ Usage:
 i3status | i3status_extensions
 ```
 Not compatible with JSON output format. Use `output_format = "none"` in your `i3status.conf`.
+
+Uninstall:
+```sh
+make uninstall
+```
 
 ## backlight_control
 Control the backlight brightness.
@@ -30,9 +35,9 @@ Build:
 make backlight_control
 ```
 
-Deploy:
+Install:
 ```sh
-make deploy
+make install
 ```
 
 Usage:
@@ -52,3 +57,8 @@ Examples:
 `backlight_control -n` decreases brightness by n%
 
 `backlight_control n` sets the brightness to n%
+
+Uninstall:
+```sh
+make uninstall
+```
