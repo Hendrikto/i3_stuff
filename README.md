@@ -4,43 +4,48 @@ A repo with some i3 stuff.
 ## i3status_extensions
 Prepend i3status with additional information.
 
-Build:
+### Build
 ```sh
 make i3status_extensions
 ```
 
-Install:
+### Install
 ```sh
 make install
 ```
 
-Usage:
+### Uninstall
+```sh
+make uninstall
+```
+
+### Usage
 ```sh
 i3status | i3status_extensions
 ```
 Not compatible with JSON output format. Use `output_format = "none"` in your `i3status.conf`.
-
-Uninstall:
-```sh
-make uninstall
-```
 
 ## backlight_control
 Control the backlight brightness.
 
 I had some problems with `xbacklight` in combination with the proprietary nvidia driver, so I wrote a replacement.
 
-Build:
+### Build
 ```sh
 make backlight_control
 ```
 
-Install:
+### Install
 ```sh
 make install
 ```
 
-Usage:
+### Uninstall
+```sh
+make uninstall
+```
+
+### Usage
 ```sh
 $ backlight_control
 Usage: backlight_control [+|-]<value>
@@ -58,23 +63,18 @@ Examples:
 
 `backlight_control n` sets the brightness to n%
 
-Uninstall:
-```sh
-make uninstall
-```
-
 ## battery_warning
-Install:
+### Install
 ```sh
 make install
 ```
 
-Uninstall:
+### Uninstall
 ```sh
 make uninstall
 ```
 
-Usage:
+### Usage
 ```sh
 systemctl start battery_warning.service
 systemctl enable battery_warning.service # optional
