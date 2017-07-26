@@ -4,7 +4,7 @@ CFLAGS += -Wall -Wextra -O3 -march=native
 backlight_dir = '/sys/class/backlight/intel_backlight/'
 max_brightness = $(shell cat $(backlight_dir)max_brightness)
 
-all: i3status_extensions deploy
+all: i3status_extensions install
 
 i3status_extensions: i3status_extensions.c
 	$(CC) $(CFLAGS) $@.c -o $@\
@@ -13,7 +13,9 @@ i3status_extensions: i3status_extensions.c
 
 clean:
 	rm -f i3status_extensions
-	sudo rm -f /usr/local/bin/i3status_extensions
 
-deploy:
-	sudo mv i3status_extensions /usr/local/bin/
+install: i3status_extensions
+	sudo mv $< /usr/local/bin/
+
+uninstall:
+	sudo rm -f /usr/local/bin/i3status_extensions
