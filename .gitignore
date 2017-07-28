@@ -1,3 +1,4 @@
 /backlight_control/backlight_control
 /battery_warning/battery_warning
+/battery_warning/battery_warning.service
 /i3status_extensions/i3status_extensions
