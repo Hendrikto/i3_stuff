@@ -64,6 +64,11 @@ Examples:
 `backlight_control n` sets the brightness to n%
 
 ## battery_warning
+### Build
+```sh
+make battery_warning
+```
+
 ### Install
 ```sh
 make install
