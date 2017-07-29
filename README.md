@@ -66,8 +66,10 @@ Examples:
 ## battery_warning
 ### Build
 ```sh
-make battery_warning
+make battery_warning battery_warning.service
 ```
+
+Sensible defaults are chosen for the systemd service file during generation. It might be necessary to edit `battery_warning.service`.
 
 ### Install
 ```sh
