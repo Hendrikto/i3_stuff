@@ -64,6 +64,8 @@ Examples:
 `backlight_control n` sets the brightness to n%
 
 ## battery_warning
+Issue a warning if the battery capacity drops too low.
+
 ### Build
 ```sh
 make battery_warning battery_warning.service
