@@ -4,7 +4,7 @@ CFLAGS += -Wall -Wextra -O3 -march=native
 backlight_dir = '/sys/class/backlight/intel_backlight/'
 max_brightness = $(shell cat $(backlight_dir)max_brightness)
 
-all: i3status_extensions install
+all: install
 
 i3status_extensions: i3status_extensions.c
 	$(CC) $(CFLAGS) $@.c -o $@\
