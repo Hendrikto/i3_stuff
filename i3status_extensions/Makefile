@@ -7,6 +7,8 @@ max_brightness = $(shell cat $(backlight_dir)/max_brightness)
 DEFINES += -D BACKLIGHT_DIR=\"$(backlight_dir)\"
 DEFINES += -D MAX_BRIGHTNESS=$(max_brightness)
 
+prefix = /usr/local
+
 all: i3status_extensions
 
 %: %.c
@@ -16,7 +18,7 @@ clean:
 	rm -f i3status_extensions
 
 install: i3status_extensions
-	sudo mv $< $(DESTDIR)/usr/local/bin/
+	sudo mv $< $(DESTDIR)$(prefix)/bin/
 
 uninstall:
-	sudo rm -f $(DESTDIR)/usr/local/bin/i3status_extensions
+	sudo rm -f $(DESTDIR)$(prefix)/bin/i3status_extensions
