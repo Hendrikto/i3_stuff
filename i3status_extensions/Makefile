@@ -7,7 +7,7 @@ max_brightness = $(shell cat $(backlight_dir)/max_brightness)
 DEFINES += -D BACKLIGHT_DIR=\"$(backlight_dir)\"
 DEFINES += -D MAX_BRIGHTNESS=$(max_brightness)
 
-all: install
+all: i3status_extensions
 
 %: %.c
 	$(CC) $(CFLAGS) $(DEFINES) $< -o $@
