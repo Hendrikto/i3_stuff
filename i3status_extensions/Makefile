@@ -16,7 +16,7 @@ clean:
 	rm -f i3status_extensions
 
 install: i3status_extensions
-	sudo mv $< /usr/local/bin/
+	sudo mv $< $(DESTDIR)/usr/local/bin/
 
 uninstall:
-	sudo rm -f /usr/local/bin/i3status_extensions
+	sudo rm -f $(DESTDIR)/usr/local/bin/i3status_extensions
