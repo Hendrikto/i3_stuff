@@ -13,7 +13,7 @@ int main() {
 	int brightness = 0;
 	char* input = NULL;
 	size_t size = 0;
-	FILE* actual_brightness = fopen(BACKLIGHT_DIR "actual_brightness", "r");
+	FILE* actual_brightness = fopen(BACKLIGHT_DIR "/actual_brightness", "r");
 	setbuf(actual_brightness, NULL);
 	fscanf(actual_brightness, "%d", &brightness);
 	rewind(actual_brightness);
